@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 호스트: localhost
--- 처리한 시간: 15-05-03 10:30
+-- 처리한 시간: 15-05-08 16:45
 -- 서버 버전: 5.5.43-0ubuntu0.14.04.1
 -- PHP 버전: 5.5.9-1ubuntu4.9
 
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `mem_info` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) NOT NULL,
-  `pass` varchar(255) NOT NULL,
+  `user_id` varchar(255) NOT NULL,
+  `user_pwd` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
