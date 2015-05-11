@@ -22,4 +22,10 @@ class Meminfo_model extends CI_Model {
 
 		return $insert_cnt;
 	}
+	function get_password($user_id) {
+		$this->db->select('user_pwd');
+		$query = $this->db->get('mem_info');
+
+		return $query->result();
+	}
 }
